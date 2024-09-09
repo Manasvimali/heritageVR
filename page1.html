@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/564x/a4/f5/06/a4f50616a071a0f2a5f7d4fa4d9d8fe0.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .welcome-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Timeless tradition: VR through India's Heritage & Culture</h1>
+        <button onclick="nextPage()">Start</button>
+    </div>
+
+    <script>
+        function nextPage() {
+            window.location.href = "page2.html"; // Redirect to choose page
+        }
+    </script>
+</body>
+</html>

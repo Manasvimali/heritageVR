@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVycxfQ-N7mNJd1VzNxQ-BLYYFMyhAalMZg&s'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .heading-container {
+            background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 400px;
+            height: 450px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="heading-container">
+        <h1>Choose your preferance</h1>
+    </div>
+    
+    <div class="image-container">
+        <img src="C:/Users/Manasvi/Documents/WhatsApp Image 2024-09-06 at 21.01.49_37284698.jpg" alt="Option 1" onclick="openPage('page5.html')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVycxfQ-N7mNJd1VzNxQ-BLYYFMyhAalMZg&s" alt="Option 2" onclick="openPage('option2.html')">
+        
+    </div>
+
+    <script>
+        function openPage(page) {
+            window.location.href = page; // Redirect to the respective option page
+        }
+    </script>
+</body>
+</html>
