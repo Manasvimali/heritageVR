@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/vr3.jpeg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .welcome-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Thank you for joining us on this journey through India's timeless heritage.</h1>
+             <h4>But this is just the begining-ther's so much more to explore</h4>
+        <button onclick="nextPage()">Start journey</button>
+    </div>
+
+    <script>
+        function nextPage() {
+            window.location.href = "page6.html"; // Redirect to choose page
+        }
+    </script>
+</body>
+</html>
